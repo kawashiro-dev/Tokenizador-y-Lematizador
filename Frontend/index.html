@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador de Texto</title>
+    <style>
+        body { font-family: sans-serif; }
+        #mensaje-error { color: red; display: none; }
+        #resultados { display: none; margin-top: 20px; border: 1px solid #ccc; padding: 15px; }
+        .resultado-campo { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Analizador de Texto</h1>
+    <textarea id="texto-analizar" rows="5" cols="50" placeholder="Ingresa el texto aquí"></textarea><br>
+    <button id="boton-analizar">Analizar</button>
+    <div id="mensaje-error"></div>
+    <div id="resultados">
+        <h2>Resultados:</h2>
+        <div class="resultado-campo">
+            <strong>Tokenización:</strong> <span id="resultado-tokenizacion"></span>
+        </div>
+        <div class="resultado-campo">
+            <strong>Lematización:</strong> <span id="resultado-lematizacion"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
